@@ -1,0 +1,13 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_library")
+
+ts_library(
+    name = "src",
+    srcs = [],
+    tsconfig = "//:tsconfig.json",
+    visibility = ["//:__subpackages__"],
+    deps = [
+        "//src/components",
+        "@npm//@babel/preset-env",
+        "@npm//@babel/preset-typescript",
+    ],
+)

@@ -1,0 +1,5 @@
+exports_files([
+    "tsconfig.json",
+    "jest.config.js",
+    ".babelrc.js",
+])

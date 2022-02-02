@@ -1,0 +1,12 @@
+load("//:jest.bzl", "jest_test")
+
+jest_test(
+    srcs = glob(
+        include = ["**/*.ts"],
+    ),
+    data = ["//:.babelrc.js"],
+    jest_config = "//:jest.config.js",
+    deps = [
+        "//src:src",
+    ],
+)
